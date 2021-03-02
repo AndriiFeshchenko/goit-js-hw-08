@@ -49,7 +49,7 @@ const imageObjCarousel = (current, forward = 1) => {
   return images[newIndex];
 };
 
-// const imagesEl = images.map(imageCardFabric);
+
 pageGalleryEl.append(...images.map(imageCardFabric));
 
 const direction = {
@@ -89,7 +89,6 @@ function closeLightBoxHandler(event) {
 
 function openLightBoxHandler(event) {
   const targetEl = event.target;
-  // if (targetEl.classList.contains('gallery__image')) {
   if (targetEl.nodeName === "IMG") {
     event.preventDefault();
     fixScroll(true);
